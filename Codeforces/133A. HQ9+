@@ -1,0 +1,40 @@
+#include<bits/stdc++.h>
+#define ll long long
+#define pi acos(-1.0)
+#define sf(a)                scanf("%lld",&a)
+#define sff(a,b)             scanf("%lld %lld",&a,&b)
+#define case(a,b)            printf("Case %lld: %lld\n",a,b)
+#define pf(a)                printf("%lld\n",a)
+#define pff(a,b)             printf("%lld %lld\n",a,b)
+using namespace std;
+int main()
+{
+    string s;
+    while(cin>>s)
+    {
+        ll x=s.size();
+        for(int i=0; i<x; i++)
+        {
+            if(s[i]=='H')
+            {
+                cout<<"YES";
+                return 0;
+            }
+            if(s[i]=='Q')
+            {
+                cout<<"YES";
+                return 0;
+            }
+            if(s[i]=='9')
+            {
+                cout<<"YES";
+                return 0;
+            }
+        }
+        cout<<"NO";
+    }
+    return 0;
+}
+
+
+ 
