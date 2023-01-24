@@ -1,0 +1,23 @@
+#include<bits/stdc++.h>
+#define ll long long
+#define pi acos(-1.0)
+#define N 1000000
+int primes[N];
+
+using namespace std;
+
+int main()
+{
+    ll n, k;
+    while(cin>>n>>k)
+    {
+        ll x, ans=0;
+        if(n%2) x=n/2+1;
+        else x=n/2;
+        if(x>=k) ans=(2*k-1);
+        else ans=2*(k-x);
+        cout<<ans<<endl;
+    }
+    return 0;
+}
+ 
